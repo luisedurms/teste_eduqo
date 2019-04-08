@@ -1,0 +1,10 @@
+n = int(input("Digite a altura da pirâmide: "))
+count = 1
+count_asterisc = 1
+underscore = "_"
+asterisc = "*"
+for x in range(n, 0, -1):
+    print(underscore*(n-1) + asterisc*(count_asterisc) + underscore*(n-1))
+    count_asterisc = count_asterisc + 2
+    count = count + 1
+    n = n - 1
